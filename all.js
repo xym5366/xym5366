@@ -32,8 +32,7 @@ window.addEventListener("load", function () {
     // 组建tbs GET请求
     tbs_request.open("GET","http://tieba.baidu.com/dc/common/tbs",true);
     //tbs_request.open("GET", "http://www.baidu.com",true);
-    tbs_request.setRequestHeader('Cookie','any non-empty string here');
-    tbs_request.setRequestHeader('Cookie','BAIDUID=2F87A2B4F005C41D0BF4380DC0E2A386:FG=1; BIDUPSID=2F87A2B4F005C41D0BF4380DC0E2A386; PSTM=1504886493; TIEBA_USERTYPE=2c5edaef49cac081299fdeef; bdshare_firstime=1504935746516; __cfduid=dbe08631a4c1f5bca6d949082bb1da64b1505066829; FP_LASTTIME=1509730531605; MCITY=-%3A; FP_UID=c62489a0cfb7619baeb15f2afc482fd8; TIEBAUID=0a368e3a29a1f78fa8438bc4; BDRCVFR[feWj1Vr5u3D]=I67x6TjHwwYf0; PSINO=2; BDORZ=B490B5EBF6F3CD402E515D22BCDA1598; BDRCVFR[dG2JNJb_ajR]=mk3SLVN4HKm; BDRCVFR[-pGxjrCMryR]=mk3SLVN4HKm; 3465372583_FRSVideoUploadTip=1; wise_device=0; Hm_lvt_98b9d8c2fd6608d564bf2ac2ae642948=1518328746,1518351232,1518414575,1518498303; Hm_lpvt_98b9d8c2fd6608d564bf2ac2ae642948=1518498303; BDUSS=IwNG4tbEdHSk1KVWdPcFJ4bzRsTjRQRWR6QS1WY2RSYkFybW5LaUtBSTdCNnBhQVFBQUFBJCQAAAAAAAAAAAEAAACnY43O19TWxrLZ1~dzeXN0ZW0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADt6glo7eoJaaj; STOKEN=7842f1afaaa4c80a5100134e2cddf158c209d167be649f9add7dac2d4fb9540d; H_PS_PSSID=1461_18194_21110_17001_20697_22075');
+    tbs_request.setRequestHeader('Cookie','any non-empty string here'); //跨域，浏览器不给设置cookie，可恶的浏览器
     tbs_request.send();
   }
   // 访问框架元素
