@@ -24,7 +24,7 @@ window.addEventListener("load", function () {
     });
     // 数据发送失败
     tbs_request.addEventListener("error", function(event) {
-      alert('Oups! GET出错404。');
+      alert(event.target.responseText);
     });
     request_mes.addEventListener("error", function(event) {
       alert('Oups! POST出错。');
