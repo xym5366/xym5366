@@ -37,7 +37,7 @@ window.addEventListener("load", function () {
   }
   // 访问框架元素
   var formobj = document.getElementById("myForm");
-  // to takeover its submit event.
+  // 监听submit事件
   formobj.addEventListener("submit", function (event) {
     event.preventDefault();
     sendData();
