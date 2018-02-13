@@ -24,16 +24,16 @@ window.addEventListener("load", function () {
     });
     // 数据发送失败
     tbs_request.addEventListener("error", function(event) {
-      alert('Oups! tbs的GET出错。');
+      alert('Oups! GET出错。');
     });
     request_mes.addEventListener("error", function(event) {
       alert('Oups! POST出错。');
     });
     // 组建tbs GET请求
-    tbs_request.open("GET", "http://tieba.baidu.com/dc/common/tbs",true);
+    tbs_request.open("GET","http://tieba.baidu.com/dc/common/tbs",true);
     //tbs_request.open("GET", "http://www.baidu.com",true);
     //tbs_request.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8');
-    tbs_request.send();
+    tbs_request.send(null);
   }
   // 访问框架元素
   var formobj = document.getElementById("myForm");
