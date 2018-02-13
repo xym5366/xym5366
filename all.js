@@ -18,10 +18,10 @@ window.addEventListener("load", function () {
     });
     // 数据发送失败
     tbs_request.addEventListener("error", function(event) {
-      alert('Oups! 出错。');
+      alert('Oups! tbs的GET出错。');
     });
     request_mes.addEventListener("error", function(event) {
-      alert('Oups! 出错。');
+      alert('Oups! POST出错。');
     });
     // 组建tbs GET请求
     tbs_request.open("GET", "http://tieba.baidu.com/dc/common/tbs",true);
